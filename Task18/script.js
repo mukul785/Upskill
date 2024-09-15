@@ -14,6 +14,7 @@
 // }
 // console.log(grader(55));
 
+
 // Q3 - Create an object representing a car with properties like Company name, model, and year. Write a function to change the car's year property. Also use object destructuring to extract and print the car's Model and Year.
 
 // const car = {company: "BMW", model: "i5", year: "2022"}
@@ -57,20 +58,30 @@
 
 // Q6 - Write an asynchronous function using async-await  to fetch data from an API (you can use the JSONPlaceholder API) and log the result.
 
-async function fetch() {
-    try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-        if (!response.ok) {
-            throw new Error('Network response reject' + response.statusText);
-        }
-        const data = await response.json();
-        console.log(data);
-    } 
-    catch (error) {
-        console.error('Operation Terminated:', error);
-    }
-}
-fetch();
+// async function fetchData() {
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+//         const data = await response.json();
+//         console.log(data);
+//     } 
+//     catch(error) {
+//         console.error('Operation Terminated:', error);
+//     }
+// }
+// fetchData();
 
 
 // Q7 - Define a nested object representing a person with properties like name, address, and contact. Use optional chaining to safely access the person's phone number, even if the contact property is missing.
+
+// const person = {
+//     name: "John Doe",
+//     address: {
+//         street: "123 Main St",
+//         city: "A",
+//         zip: "12345"
+//     },
+//     // contact: "1234512345"
+// };
+// const ph = person.contact ?? "No Phone number available";
+
+// console.log(ph);
