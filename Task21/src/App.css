@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color: blueviolet;
+}
+h2{
+    text-align: center;
+    margin: 5rem auto;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 5rem;
+}
