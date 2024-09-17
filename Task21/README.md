@@ -1,3 +1,6 @@
+# Deployed on Netlify
+https://66e9a40d11ad09251461b855--vocal-lollipop-78d3c7.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
