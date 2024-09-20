@@ -1,0 +1,12 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: 1px;
+    overflow-y: scroll;
+}
+

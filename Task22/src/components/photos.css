@@ -1,0 +1,44 @@
+.App-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photos-container {
+    width: 90vw;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    scrollbar-width: thin;
+    overflow-y: scroll;
+}
+
+.photo-card {
+    border: 3px solid white;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.res {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-card p {
+    text-align: center;
+}
