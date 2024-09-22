@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    scrollbar-width: 1px;
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+    height: 100vh;
+}

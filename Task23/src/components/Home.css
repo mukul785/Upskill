@@ -1,0 +1,22 @@
+.main{
+    margin: 2rem;
+    display: flex;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+.card1{
+    background-color: white;
+    width: 980px;
+    padding: 1rem;
+}
+.card1 img{
+    width: 750px;
+}
+.card img{
+    width: 400px;
+}
+.card{
+    width: 480px;
+    padding: 1rem;
+    background-color: white;
+}

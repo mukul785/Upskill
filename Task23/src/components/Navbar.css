@@ -1,0 +1,37 @@
+nav{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav *{
+    cursor: pointer;
+}
+nav img{
+    height: 30px;
+}
+nav button{
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: white;
+    border: none;
+    text-decoration: none;
+}
+.nav-btn{
+    display: flex;
+    gap: 1rem;
+}
+.nav-btn button{
+    background-color: #28a745;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
