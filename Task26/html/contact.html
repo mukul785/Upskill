@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.25rem;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        nav {
+            width: 100vw;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        nav img {
+            margin-left: 2rem;
+            min-height: 50px;
+            max-height: 70px;
+            height: 6vw;
+        }
+
+        .links {
+            margin: 1.5rem;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: black;
+            margin: 0.5rem;
+            font-size: 1.5vw;
+            font-weight: 600;
+        }
+
+        .user-name {
+            margin-top: 0.5rem;
+            margin-right: 5rem;
+            display: flex;
+            align-items: center;
+            min-height: 50px;
+            max-height: 60px;
+            height: 6vw;
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgb(135, 185, 235);
+            background-color: rgb(205, 240, 255);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .open-btn {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 6vw;
+        }
+
+        .heading {
+            font-size: 3rem;
+        }
+
+        .description {
+            font-size: 3rem;
+            color: rgb(66, 187, 235);
+        }
+
+        .book-btn {
+            margin-top: 20px;
+            color: white;
+            background-color: #3f8aec;
+            border: none;
+            padding: 1rem;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .book-btn:hover {
+            transform: scale(1.2) rotate(-5deg);
+            transition: all ease 1s;
+        }
+
+        .hamburger-section {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 250px;
+            height: 100vh;
+            background: black;
+            color: white;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+        .hamburger-section a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .rest {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 890px) {
+            .right-hero img {
+                width: 300px;
+            }
+        }
+
+        @media screen and (max-width: 745px) {
+            .links {
+                display: none;
+            }
+
+            .open-btn {
+                display: block;
+                margin: 1rem;
+                background-color: white;
+                border: none;
+            }
+
+            .open-btn:focus+.hamburger-section {
+                display: flex;
+                transform: translateX(0);
+            }
+
+            .logo-area {
+                flex: 1;
+                text-align: left;
+            }
+
+            .hero {
+                margin: 0.5rem auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo-area">
+            <img src="https://imgs.search.brave.com/UDrEHsvaqLvXRbXPYRFoPhhCJmFkpKXHzZkcnUGF2-A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nb2Rlc2lnbi5u/ZXQvbG9nby1uZXcv/dGV4dC1pbi1ob3Jp/em9udGFsLWxpbmVz/LTkzNTJsZC5wbmc_/bndtPTEmbndzPTEm/aW5kdXN0cnk9bGF1/bmRyeSZ0eHRfa2V5/d29yZD1BbGw"
+                alt="logo">
+        </div>
+        <div class="links">
+            <a href="./home">Home</a>
+            <a href="./contact">Contact Us</a>
+            <a href="./about">About Us</a>
+        </div>
+        <div class="user-name">Username</div>
+    </nav>
+    <button class="open-btn">
+        <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+            <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+            <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+        </svg>
+    </button>
+    <div class="hamburger-section">
+        <a href="./home">Home</a>
+        <a href="./contact">Contact Us</a>
+        <a href="./about">About Us</a>
+        <a href="#">Close</a>
+    </div>
+    <div class="rest">
+        <h1>Contact Us</h1><br>
+        <p>This is contact page</p>
+    </div>
+</body>
+
+</html>
